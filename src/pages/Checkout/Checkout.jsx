@@ -28,7 +28,7 @@ try{
     if(data.status=="success"){
         toast.success("Your order has been created")
         setTimeout(()=>{
-        navigate('/order')
+        navigate('/allorders')
         },1500)
     }
 }

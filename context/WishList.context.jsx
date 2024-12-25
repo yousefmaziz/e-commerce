@@ -20,11 +20,11 @@ export default function WishProvider({ children }) {
 
             let { data } = await axios.request(options);
             console.log(data);
-            setWishInfo(data)
-            if (data.status == "success") {
-                toast.success(data.message);
-                getWishproducts();
-            }
+            if (data.status === "success") {
+                setWishInfo(data); 
+                toast.success(data.message); 
+                
+            } 
         } catch (error) {
             console.log(error);
             
@@ -41,8 +41,7 @@ export default function WishProvider({ children }) {
 
             let { data } = await axios.request(options);
             setWishInfo(data);
-            console.log(data.data);
-            
+
         } catch (error) {
            console.log(error);
            
@@ -59,9 +58,9 @@ export default function WishProvider({ children }) {
                 },
             }
         let {data}= await axios.request(options)
-        console.log(data);
-        setWishInfo(data)
+        
         if(data.status=="success"){
+            setWishInfo(data)
             getWishproducts()
             toast.success("Deleted")
         }

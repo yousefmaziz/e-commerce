@@ -30,13 +30,13 @@ export default function Navabr() {
     }`
   } to="/">Home</NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink className={({ isActive }) =>
     `relative before:absolute before:w-0 before:h-0.5 hover:before:w-full transition-[width] before:duration-300 before:bg-primcolor-500 before:left-0 before:-bottom-2 ${
       isActive ? ' before:!w-full font-semibold ' : ''
     }`
-  } to="/product">product</NavLink>
-        </li>
+  } to="/product/:id">product</NavLink>
+        </li> */}
         <li>
           <NavLink className={({ isActive }) =>
     `relative before:absolute before:w-0 before:h-0.5 hover:before:w-full transition-[width] before:duration-300 before:bg-primcolor-500 before:left-0 before:-bottom-2 ${

@@ -33,9 +33,7 @@ export default function Card({productInfo}) {
       <img src={imageCover} alt="" />
 
 <div
-    onClick={()=>{
-        addProductToWish({productId:id})
-    }}
+
 
 
 
@@ -49,7 +47,11 @@ className="layer group-hover/card:opacity-100 transation-opacity duration-300  f
         isInWishlist ? "text-red-500" : "text-white"
     }`}
 >
-    <i className="fa-solid fa-heart"></i>
+    <i
+        onClick={()=>{
+            addProductToWish({productId:id})
+        }}
+         className="fa-solid fa-heart"></i>
 </button>
 
     <div

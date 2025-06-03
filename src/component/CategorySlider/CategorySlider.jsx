@@ -22,16 +22,35 @@ setCategory(data.data)
   return (
     <>
     
-    <section className="my-12">
+    <section className=" my-12 mx-1">
         <h2 className="mb-3 text-bold text-lg text-gray-600">Shop Category </h2>
     {!Category ? <Loading/> : 
-        <Swiper slidesPerView={6} loop={true}>
+        <Swiper
+      spaceBetween={1}
+      breakpoints={{
+        0: {
+          slidesPerView: 1, // للموبايل
+        },
+        640: {
+          slidesPerView: 2, // تابلت صغير
+        },
+        768: {
+          slidesPerView: 3, // تابلت عادي
+        },
+        1024: {
+          slidesPerView: 4, // لابتوب
+        },
+        1280: {
+          slidesPerView: 6, // شاشات كبيرة
+        },
+      }}
+     slidesPerView={6} loop={true}>
             {Category.map((Category)=>
             <SwiperSlide key={Category._id}>
 <div className="h-64 ">
-<img className="w-full h-full object-cover" src={Category.image} alt="" />
+<img className="w-full h-full object-cover " src={Category.image} alt="" />
 </div>
-<h3>{Category.name}</h3>
+<h3 className="my-3 ps-3">{Category.name}</h3>
             </SwiperSlide>)
             }
         </Swiper>

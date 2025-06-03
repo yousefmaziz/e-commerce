@@ -14,7 +14,7 @@ export default function HomeSlider() {
   return (
     <>
     
-    <section className='grid grid-cols-12 mb-8'>
+    <section className='grid grid-cols-12 mb-8 mx-2'>
     <div className='col-span-8'>
 
         <Swiper loop={true}>

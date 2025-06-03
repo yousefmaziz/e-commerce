@@ -28,7 +28,7 @@ try{
     if(data.status=="success"){
         toast.success("Your order has been created")
         setTimeout(()=>{
-        navigate('/order')
+        navigate('/allorders')
         },1500)
     }
 }
@@ -37,12 +37,6 @@ try{
         
     }
 }
-
-
-
-
-
-
 
 async function onlinePayment(values){
 try{
@@ -98,7 +92,7 @@ try{
   return (
     <>
     
-    <section>
+    <section className='mx-3'>
         <h1 className='text-xl text-gray-700 font-semibold mb-4'>Shipping address</h1>
         <form action="" className='space-y-4' onSubmit={formik.handleSubmit}>
             <div className="city ">

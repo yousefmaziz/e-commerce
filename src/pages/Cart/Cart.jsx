@@ -18,7 +18,7 @@ useEffect(()=>{
     <>
 
 
-{cartInfo === null ? <Loading/> : <section>
+{cartInfo === null ? <Loading/> : <section className="mx-3">
     <div>
         <h2 className="text-semibold text-gray-700 text-xl">Your shopping cart</h2>
     </div>

@@ -70,7 +70,7 @@ let validation =
   return (
     <>
     
-    <form action=""
+    <form action="" className='mx-3'
     onSubmit={formik.handleSubmit}>
     <div >
     <h1 className="text-lg text-slate-900 font-semibold mb-12">

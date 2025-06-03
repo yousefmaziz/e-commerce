@@ -38,7 +38,7 @@ useEffect(()=>{
 
   return (
     <>
-{ProductDetails ?     <section className="grid grid-cols-12 gap-5">
+{ProductDetails ?     <section className="grid grid-cols-12 gap-5 mx-3">
     <div className="col-span-3">
     <img src={ProductDetails.imageCover}alt="" className="w-full"/>
     </div>

@@ -12,16 +12,16 @@ export default function CartItem({productInfo}) {
 <>
 
 <div className="flex gap-2">
-<div className="card-item grow flex justify-between items-center bg-gray-100 py-4 px-6 rounded-lg">
+<div className="card-item grow flex justify-between items-center bg-gray-100 py-4 pr-10 pl-3 rounded-lg">
     <img src={imageCover} className="w-24 rounded-full h-24 border-white border-4 object-cover " alt="" />
     <h3 className="text-gray-700 font-semibold text-lg">
       <Link to={`/product/${id}`}>{title}</Link>
       
       </h3>
     <h4 className="text-gray-500 font-semibold ">{category.name}</h4>
-    <div className="count flex gap-5 items-center ">
+    <div className="count flex gap-2 items-center ">
         <span className="text-2xl font-bold text-gray-700">{count}</span>
-        <div className="icons space-y-3 flex-col ">
+        <div className="icons space-y-2 flex-col ">
 
           <div
           onClick={()=>{
@@ -40,7 +40,7 @@ export default function CartItem({productInfo}) {
            <i className="fa-solid fa-minus "></i>
            </div>
         </div>
-        <span>{price} L.E</span>
+        <span className="">{price} L.E</span>
     </div>
 </div>
 

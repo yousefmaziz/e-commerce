@@ -2,7 +2,7 @@
   "name": "react",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://yousefmaziz.github.io/e-commerce",
+  "homepage": "https://yousefmaziz.github.io/Ecommerce",
   "type": "module",
   "scripts": {
     "dev": "vite",

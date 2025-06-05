@@ -177,7 +177,7 @@ onSubmit:sendData
 
     <div className="question flex gap-1">
       <p className="text-md text-slate-900 font-semibold mb-1">
-        You have an account?
+        Already have an account?
       </p>
       <Link to={`/Login`} className="text-primcolor-600 ml-1">
         Sign in
